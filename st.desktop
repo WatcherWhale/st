@@ -1,0 +1,20 @@
+[Desktop Entry]
+Categories=System;TerminalEmulator
+Comment[en_GB]=simple-terminal emulator for X
+Comment=simple-terminal emulator for X
+Exec=st tmux -2
+GenericName[en_GB]=
+GenericName=
+Icon=/home/watcherwhale/Pictures/icons/terminal.png
+MimeType=
+Name[en_GB]=st (Simple Terminal)
+Name=st (Simple Terminal)
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
