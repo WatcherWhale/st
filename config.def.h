@@ -99,7 +99,7 @@ char *termname = "st-256color";
  *
  *	stty tabs
  */
-unsigned int tabspaces = 8;
+unsigned int tabspaces = 4;
 
 /* bg opacity */
 float alpha = 1;
@@ -128,7 +128,7 @@ static const char *colorname[] = {
   [15] = "#eceff4", /* white   */
 
   /* special colors */
-  [256] = "#192632", /* background */
+  [256] = "#2e3440", /* background */
   [257] = "#92adb4", /* foreground */
 };
 
@@ -155,7 +155,7 @@ unsigned int defaultunderline = 7;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 2;
+static unsigned int cursorshape = 6;
 
 /*
  * Default columns and rows numbers
@@ -215,6 +215,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
+    { ControlMask,          XK_equal,       zoom,           {.f = +2} },
+    { ControlMask,          XK_minus,       zoom,           {.f = -2} },
 };
 
 /*
