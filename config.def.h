@@ -120,7 +120,7 @@ float alpha = 1;
 static const char *colorname[] = {
 
   /* 8 normal colors */
-  [0] = "#2e3440", /* black   */
+  [0] = "#3b4252", /* black   */
   [1] = "#bf616a", /* red     */
   [2] = "#a3be8c", /* green   */
   [3] = "#ebcb8b", /* yellow  */
