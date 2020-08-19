@@ -7,11 +7,10 @@
  */
 static char *font = "Hack:pixelsize=20:antialias=true:autohint=true";
 static char *font2[] = {
-    "Hack:pixelsize=20:antialias=true:autohint=true",
     "FontAwesome5FreeSolid:pixelsize=20:antialias=true:autohint=true",
     "FontAwesome5FreeRegular:pixelsize=20:antialias=true:autohint=true",
     "FontAwesome5Brands:pixelsize=20:antialias=true:autohint=true",
-    "FiraCodeRegular:pixelsize=20:antialias=true:autohint=true"
+    "Symbola:pixelsize=12:antialias=true:autohint=true"
 };
 
 static int borderpx = 15;
