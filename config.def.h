@@ -7,9 +7,11 @@
  */
 static char *font = "Hack:pixelsize=20:antialias=true:autohint=true";
 static char *font2[] = {
+    "Hanazono:pixelsize=25:antialias=true:autohint=true",
     "FontAwesome5FreeSolid:pixelsize=20:antialias=true:autohint=true",
     "FontAwesome5FreeRegular:pixelsize=20:antialias=true:autohint=true",
     "FontAwesome5Brands:pixelsize=20:antialias=true:autohint=true",
+    "SourceCodePro:pixelsize=20:antialias=true:autohint=true",
     "Symbola:pixelsize=12:antialias=true:autohint=true"
 };
 
@@ -201,6 +203,8 @@ static uint forcemousemod = ShiftMask;
  */
 static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument       release */
+	{ ShiftMask,            Button4, kscrollup,      {.i = 1} },
+	{ ShiftMask,            Button5, kscrolldown,    {.i = 1} },
 	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
 	{ ShiftMask,            Button4, ttysend,        {.s = "\033[5;2~"} },
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
@@ -228,6 +232,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
     { ControlMask,          XK_equal,       zoom,           {.f = +2} },
     { ControlMask,          XK_minus,       zoom,           {.f = -2} },
+    { ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
+	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
 };
 
 /*
