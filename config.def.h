@@ -5,15 +5,15 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Hack Nerd Font Mono:pixelsize=20:antialias=true:autohint=true";
+static char *font = "Hack:pixelsize=20:antialias=true:autohint=true";
 static char *font2[] = {
     //"JoyPixels:pixelsize=20:antialias=true:autohint=true",
-    "Symbola:pixelsize=20:antialias=true:autohint=true",
-    "HanaMinA:pixelsize=25:antialias=true:autohint=true",
     "FontAwesome5FreeSolid:pixelsize=20:antialias=true:autohint=true",
     "FontAwesome5FreeRegular:pixelsize=20:antialias=true:autohint=true",
     "FontAwesome5Brands:pixelsize=20:antialias=true:autohint=true",
-    "Noto Mono Nerd Font Complete Mono:pixelsize=20:antialias=true:autohint=true"
+    "Hack Nerd Font Mono:pixelsize=20:antialias=true:autohint=true",
+    "HanaMinA:pixelsize=25:antialias=true:autohint=true",
+    "Symbola:pixelsize=20:antialias=true:autohint=true"
 };
 
 static int borderpx = 15;
