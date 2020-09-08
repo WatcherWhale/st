@@ -1,32 +1,18 @@
 st - simple terminal
 --------------------
-st is a simple terminal emulator for X which sucks less.
+st is a simple terminal emulator for X which sucks less. This is my build of st with patches that make my life a bit easier and the style that I liked (Nord Theme).
 
+![Screenshot](Screenshot.png)
 
 Requirements
 ------------
-In order to build st you need the Xlib header files.
-
+In order to build st you need the Xlib header files. All required fonts (font names can be found in `config.def.h`)
 
 Installation
 ------------
-Edit config.mk to match your local setup (st is installed into
-the /usr/local namespace by default).
 
-Afterwards enter the following command to build and install st (if
-necessary as root):
+Clone this repository and run `sudo make clean install` to build it. Now you can run st.
 
-    make clean install
-
-
-Running st
-----------
-If you did not install st with make clean install, you must compile
-the st terminfo entry with the following command:
-
-    tic -sx st.info
-
-See the man page for additional details.
 
 Credits
 -------
